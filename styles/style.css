@@ -48,7 +48,7 @@ nav a{
 }
 
 nav a:hover{
-  background-color: var(--accent-color);
+  background-color: grey;
   color: #f4dfcd;
   cursor:pointer;
 }
@@ -182,7 +182,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   margin-top: 5px;
-  color: red;
+  +color: red;
 }
 
 input{
@@ -197,19 +197,13 @@ textarea{
   width: 90%;
 }
 
-.imgBox:hover  { box-shadow: 0 0 30px blue; }
-.imgBox1:hover { box-shadow: 0 0 30px blue; }
-.imgBoxp:hover { box-shadow: 0 0 30px purple; }
-.imgBoxb:hover { box-shadow: 0 0 30px blue; }
-.imgBoxo:hover { box-shadow: 0 0 30px orange;}
-.imgBoxz:hover { box-shadow: 0 0 30px blue;}
+.imgBox { box-shadow: 0 0 40px red; }
+.imgBox1:hover { box-shadow: 0 0 30px white; }
 
-#imgBox:hover  { box-shadow: 0 0 30px blue; }
-#imgBox1:hover { box-shadow: 0 0 30px blue; }
-#imgBoxp:hover { box-shadow: 0 0 30px purple; }
-#imgBoxb:hover { box-shadow: 0 0 30px blue; }
-#imgBoxo:hover { box-shadow: 0 0 30px orange;}
-#imgBoxz:hover { box-shadow: 0 0 30px yelloW;}
+
+#imgBox { box-shadow: 0 0 40px red; }
+#imgBox1:hover { box-shadow: 0 0 30px white; }
+
 
 /* Styling for Contact area */
 #contact iframe {
@@ -225,7 +219,8 @@ iframe{
 }
 
 form{
-  padding-left: 0px;
+  /* padding-left: 0px; */
+  box-sizing: border-box;
 }
 
 footer{
@@ -251,5 +246,28 @@ footer ul{
 }
 
 footer{
-  background-image:url(../images/b.jpg);
+  background-image:url(../images/footer.jpeg);
+  background-repeat:no-repeat;
+}
+
+i{
+  margin-right: 10px;
+}
+
+figure{
+  box-shadow: 0 0 30px black;
+}
+
+footer h4{
+  color: black;
+  padding-top: 20px;
+}
+
+
+footer.footerFigure {
+  margin: auto;
+  width: 200%;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 5px rgba(0,0,0,1);
 }
